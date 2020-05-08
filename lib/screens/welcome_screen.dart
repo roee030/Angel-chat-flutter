@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatefulWidget {
+  static const String id = 'welcome_screen';
+
   @override
   _WelcomeScreenState createState() => _WelcomeScreenState();
 }
@@ -17,6 +19,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Container(
                   child: Image.asset('images/logo.png'),
@@ -32,7 +36,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ],
             ),
             SizedBox(
-              height: 48.0,
+              height: 250.0,
             ),
             Padding(
               padding: EdgeInsets.symmetric(vertical: 16.0),
